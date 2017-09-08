@@ -1,0 +1,374 @@
+/* This section that universally covers the entire webpages begins here */
+	* {
+		margin: 0px;
+	}
+	body {
+		background-position: center;
+		background-image: url('wireframes/sports-background-opacity.jpg');
+		background-repeat: repeat;
+		background-attachment: fixed;
+	}
+	h1 {
+		font-family: 'Michroma', sans-serif;
+		font-size: 42px;
+		font-weight: normal;
+		text-align: center;
+		color: #252525;
+		cursor: default;
+	}
+	button {
+		background: none;
+		border: none;
+	}
+	button, h2, h3 {
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	h2:hover, h3:hover {
+		color: yellow;
+		background: transparent;
+	}
+	h4 {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 24px;
+	}
+	#scrimmage-sports {
+		max-width: 700px;
+		margin: auto;
+		background-color: white;
+	}
+/* This section ends here */
+
+
+
+/*The section that covers the headers, all the navigation menus, and drop down menus begins here*/
+	header {
+		padding-bottom: 20px;
+		width: 100%;
+		text-align: center;
+		background-color: #FFFFFF;
+	}
+	.navbar {
+		font-size: 18px;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+		text-indent: -90px;
+		color: white;
+		background-color: #252525;
+	}
+	.navbar-link {
+		font-size: 21px;
+		font-weight: normal;
+		text-indent: 70px;
+	}
+	.menu-link, .options-link {
+		font-size: 18px;
+		font-weight: normal;
+	}
+	.menu-link {
+		text-indent: 10px;
+		text-align: left;
+	}
+	.menu-button, a {
+		color: white;
+		text-decoration: none;
+	}
+	.options-link {
+		text-align: center;
+	}
+	.nav-menu, .options-menu, .options-button {
+		color: white;
+	}
+	.options-menu h2 {
+		font-weight: normal;
+	}
+	button {
+		outline: none;
+	}
+	button, .dropdown-menu {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+	}
+	.dropdown-menu-content {
+		background-color: #252525;
+		display: none;
+		font-weight: normal;
+		color: white;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		z-index: 1;
+		position: absolute;
+		text-align: left;
+		left: 20px;
+		min-width: 132px;
+	}
+	button, .dropdown-menu:hover .dropdown-menu-content, .options-dropdown-menu:hover .options-dropdown-menu-content-nfl, .options-dropdown-menu:hover .options-dropdown-menu-content-mlb, .options-dropdown-menu:hover .options-dropdown-menu-content-nba, .options-dropdown-menu:hover .options-dropdown-menu-content-nhl {
+		display: block;
+	}
+	.options-dropdown-menu, .options-menu, .options-dropdown-menu-content-nfl, .options-dropdown-menu-content-mlb, .options-dropdown-menu-content-nba, .options-dropdown-menu-content-nhl {
+		background-color: #252525;
+		width: 200px;
+		text-align: center;
+	}
+	.options-dropdown-menu {
+		margin-left: auto;
+		margin-right: auto;
+		height: 45px;
+	}
+	.options-menu {
+		height: 50px;
+	}
+	.options-dropdown-menu-content-nfl, .options-dropdown-menu-content-mlb, .options-dropdown-menu-content-nba, .options-dropdown-menu-content-nhl {
+		position: relative;
+		display: none; /*This is what makes the options menu appear on hover*/
+	}
+	.options-dropdown-menu-content-nfl {
+		height: 600px;
+	}
+	.options-dropdown-menu-content-mlb {
+		height: 250px;
+	}
+	.options-dropdown-menu-content-nba, .options-dropdown-menu-content-nhl {
+		height: 250px;
+	}
+	.options-button {
+		height: 35px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+/* This section ends here */
+
+
+
+/*The section the covers the main content displayed begins here*/
+	.hidden {
+		display: none;
+	}
+	.banner {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+	img {
+		height: auto;
+		max-width: 700px;
+		text-align: center;
+	}
+	.banner-content {
+		font-family: 'Open Sans', sans-serif;
+		padding-top: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.article-content {
+		padding-bottom: 25px;
+	}
+	.boxscore-container {
+		display: block;
+		text-align: center;
+	}
+	.score-container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.scoreboard-container {
+		width: 90%;
+	}
+	.score-container-left, .score-container, .scoreboard-container {
+		padding-top: 25px;
+		padding-bottom: 10px;
+		background-color: white;
+		display: inline-block;
+	}
+	.boxscore-container th, .boxscore-container td {
+		padding: 15px;
+	}
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+	td, th {    
+		font-family: 'Open Sans', sans-serif;
+		text-align: left;
+		border: 1px solid #ddd;
+	}
+	th {
+		background-color: #D3D3D3;
+		font-weight: bold;
+	}
+	.sports-game-table th, .sports-game-table td {
+		font-size: 14px;
+		padding: 15px;
+	}
+	.sports-game-table th {
+		font-weight: bold;
+	}
+	.sports-date, .sports-date-top, .sports-team, .sports-team-top, .game-location {
+		font-family: 'Open Sans', sans-serif;
+		text-align: left;
+	}
+	.sports-date, .sports-date-top, .game-location  {
+		padding-left: 10px;
+	}
+	.sports-date, .sports-date-top, .sports-team, .sports-team-top, .sports-category {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.sports-date, .sports-team {
+		padding-top: 35px;
+	}
+	.sports-category {
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.game-location {
+		font-size: 12px;
+		padding-top: 5px;
+	}
+	#js-nfl-schedule-row, #js-mlb-schedule-row, #js-nba-schedule-row, #js-nhl-schedule-row {
+		text-align: center;
+		padding: 15px;
+		width: 90%;
+		font-size: 14px;
+	}
+	#js-nfl-scorecard-row, #js-mlb-scorecard-row, #js-nba-scorecard-row, #js-nhl-scorecard-row {
+		text-align: center;
+		padding: 15px;
+		width: 90%;
+		font-size: 14px;
+	}
+/*This section ends here*/
+
+
+
+/*The media query section applies throughout the webpages and starts here*/
+	@media screen and (max-device-width: 736px) {
+		body {
+			background-color: white;
+		}
+		#scrimmage-sports {
+			max-width: 100%;
+			margin: auto;
+			background-color: white;
+		}
+		h1 {
+			font-size: 54px;
+		}
+		.navbar-link {
+			font-size: 50px;
+		}
+		.menu-link {
+			font-size: 50px;
+		}
+		h4, .options-link {
+			font-size: 36px;
+		}
+		p, .options-menu {
+			font-size: 20px;
+		}
+		button {
+			display: block;
+		}
+		.navbar {
+			display: block;
+			width: 100%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			text-align: left;
+			color: white;
+			background-color: #252525;
+		}
+		button:click, h2:click, h3:click {
+			color: yellow;
+			background: transparent;
+		}
+		.dropdown-menu {
+			display: block;
+			padding-bottom: 10px;
+		}
+		.dropdown-menu-content {
+			text-align: left;
+			left: 250px;
+			top: -45px;
+			background-color: #252525;
+			color: white;
+			max-width: 50%;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			z-index: 1;
+		}
+		.options-dropdown-menu, .options-menu, .options-dropdown-menu-content-nfl, .options-dropdown-menu-content-mlb, .options-dropdown-menu-content-nba, .options-dropdown-menu-content-nhl {
+			background-color: #252525;
+			width: 360px;
+			text-align: center;
+		}
+		.options-dropdown-menu {
+			margin-left: auto;
+			margin-right: auto;
+			height: 90px;
+		}
+		.options-menu {
+			height: 100px;
+		}
+		.options-dropdown-menu-content-nfl, .options-dropdown-menu-content-mlb, .options-dropdown-menu-content-nba, .options-dropdown-menu-content-nhl {
+			position: relative;
+			display: none; /*This is what makes the options menu appear on hover*/
+		}
+		.options-dropdown-menu-content-nfl {
+			height: 1700px;
+		}
+		.options-dropdown-menu-content-mlb {
+			height: 700px;
+		}
+		.options-dropdown-menu-content-nba, .options-dropdown-menu-content-nhl {
+			height: 700px;
+		}
+		.options-button {
+			height: 35px;
+			padding-top: 20px;
+			padding-bottom: 80px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.options-button:click {
+			display: none;
+		}
+		.banner-content {
+			font-family: 'Open Sans', sans-serif;
+			padding-top: 10px;
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+		.sports-date, .sports-date-top, .sports-team, .sports-team-top, .sports-category {
+			font-size: 50px;
+		}
+		.game-location {
+			font-size: 30px;
+		}
+		.boxscore-container th, .boxscore-container td {
+			font-size: 40px;
+			padding-left: 10px;
+			padding-right: 5px;
+			padding-bottom: 5px;
+		}
+		.scoreboard-container {
+			width: 90%;
+		}
+		table {
+			width: 100%;
+		}
+		.sports-game-table th {
+			font-size: 35px;
+			font-weight: bold;
+		}
+		.sports-game-table td {
+			font-size: 35px;
+		}
+	}
+/*This section ends here*/
+

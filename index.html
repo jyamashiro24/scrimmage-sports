@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrimmage Sports | Sports Media App</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Michroma|Open+Sans" rel="stylesheet">
+	<meta charset="utf-8">
+	<link rel="stylesheet" media="only screen and (color)" href="main.css" />
+</head>
+
+<body>
+	<div id="scrimmage-sports" class="">
+
+	<!-- This header section that covers the navigation menu and web app title begins here-->
+		<header>
+			<h1>Scrimmage Sports</h1>
+		</header>
+
+		<nav id="js-navbar" class="navbar">
+			<div class="dropdown-menu">
+				<button id="js-home-page-button" class="nav-menu"><h2 class="navbar-link">Home</h2></button>
+			</div>
+			<div class="dropdown-menu">
+				<button id="js-nfl-nav-button" class="nav-menu"><h2 class="navbar-link">NFL</h2></button>
+					<div id="js-nfl-dropdown-menu-content" class="dropdown-menu-content">
+						<br><button id="js-nfl-scorecard-button" class="menu-button"><h3 class="menu-link">Scoreboard</h3></button>
+						<br><button id="js-nfl-schedule-button" class="menu-button"><h3 class="menu-link">Schedule</h3></button>
+						<br><button id="js-nfl-standing-button" class="menu-button"><h3 class="menu-link">Standings</h3></button><br>
+					</div>
+			</div>
+			<div class="dropdown-menu">
+				<button id="js-mlb-nav-button" class="nav-menu"><h2 class="navbar-link">MLB</h2></button>
+					<div id="js-mlb-dropdown-menu-content" class="dropdown-menu-content">
+						<br><button id="js-mlb-scorecard-button" class="menu-button"><h3 class="menu-link">Scoreboard</h3></button>
+						<br><button id="js-mlb-schedule-button" class="menu-button"><h3 class="menu-link">Schedule</h3></button>
+						<br><button id="js-mlb-standing-button" class="menu-button"><h3 class="menu-link">Standings</h3></button><br>
+					</div>
+			</div>
+			<div class="dropdown-menu">
+				<button id="js-nba-nav-button" class="nav-menu"><h2 class="navbar-link">NBA</h2></button>
+					<div id="js-nba-dropdown-menu-content" class="dropdown-menu-content">
+						<br><button id="js-nba-scorecard-button" class="menu-button"><h3 class="menu-link">Scoreboard</h3></button>
+						<br><button id="js-nba-schedule-button" class="menu-button"><h3 class="menu-link">Schedule</h3></button>
+						<br><button id="js-nba-standing-button" class="menu-button"><h3 class="menu-link">Standings</h3></button><br>
+					</div>
+			</div>
+			<div class="dropdown-menu">
+				<button id="js-nhl-nav-button" class="nav-menu"><h2 class="navbar-link">NHL</h2></button>
+					<div id="js-nhl-dropdown-menu-content" class="dropdown-menu-content">
+						<br><button id="js-nhl-scorecard-button" class="menu-button"><h3 class="menu-link">Scoreboard</h3></button>
+						<br><button id="js-nhl-schedule-button" class="menu-button"><h3 class="menu-link">Schedule</h3></button>
+						<br><button id="js-nhl-standing-button" class="menu-button"><h3 class="menu-link">Standings</h3></button><br>
+					</div>
+			</div>
+		</nav>
+	<!-- This header section that covers the navigation menu and web app title ends here-->
+
+
+	<!-- This main section that covers app content begins here-->
+		<section>
+			<div id="js-home-page" class="">
+				<div class="banner">
+					<img src="wireframes/sports-banner.jpg" scaling="100%">
+				</div>
+				<div class="banner-content">
+					<h4>Welcome To The Scrimmage Sports App!</h2><br>
+					<p class="article-content">This web app will show you game scoreboards, team standings, and game schedules from all the professional leagues across different major sports.</p>
+				</div>
+				<br><br>
+			</div>
+
+
+			<!-- This NFL section below begins here and is tied to jQuery. When selecting a sport from the navbar, one of the categories from this section will be rendered -->
+				<div id="js-render-nfl-scorecard" class="hidden">
+					<br><h1 class="sports-category">NFL Scorecards</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers scorecards of past games from the 2016 regular season. Below are the results from each game played on a specific day, where the game occurred, and how many points each team scored in each quarter. In the drop down menu, you can browse through different weeks that contains regularly scheduled games played.</p>
+					</div>
+					
+					<div class="options-dropdown-menu">
+						<button id="js-options-menu" class="options-menu"><h2>&#9776; Select An Option</h2></button>
+							<div class="options-dropdown-menu-content-nfl">
+								<button id="week1" class="options-button"><h3 class="options-link">Week 1</h3></button>
+								<button id="week2" class="options-button"><h3 class="options-link">Week 2</h3></button>
+								<button id="week3" class="options-button"><h3 class="options-link">Week 3</h3></button>
+								<button id="week4" class="options-button"><h3 class="options-link">Week 4</h3></button>
+								<button id="week5" class="options-button"><h3 class="options-link">Week 5</h3></button>
+								<button id="week6" class="options-button"><h3 class="options-link">Week 6</h3></button>
+								<button id="week7" class="options-button"><h3 class="options-link">Week 7</h3></button>
+								<button id="week8" class="options-button"><h3 class="options-link">Week 8</h3></button>
+								<button id="week9" class="options-button"><h3 class="options-link">Week 9</h3></button>
+								<button id="week10" class="options-button"><h3 class="options-link">Week 10</h3></button>
+								<button id="week11" class="options-button"><h3 class="options-link">Week 11</h3></button>
+								<button id="week12" class="options-button"><h3 class="options-link">Week 12</h3></button>
+								<button id="week13" class="options-button"><h3 class="options-link">Week 13</h3></button>
+								<button id="week14" class="options-button"><h3 class="options-link">Week 14</h3></button>
+								<button id="week15" class="options-button"><h3 class="options-link">Week 15</h3></button>
+								<button id="week16" class="options-button"><h3 class="options-link">Week 16</h3></button>
+								<button id="week17" class="options-button"><h3 class="options-link">Week 17</h3></button>
+							</div>
+					</div>
+
+					<div id="js-nfl-scorecard" class="hidden"></div>
+					<footer></footer>
+				</div>
+
+				<div id="js-render-nfl-schedule" class="hidden">
+					<br><h1 class="sports-category">NFL Schedule</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers the complete schedule of past games from the 2016 regular season sorted by date. It tells us what matchups occurred, the time game was scheduled to play, and in what sports stadium the game occurred.</p>
+					</div>
+
+					<div id="js-nfl-schedule">
+						<div class="boxscore-container">
+							<div class="scoreboard-container">
+								<table id="js-nfl-schedule-table"> 
+								<!-- This table id is linked to jQuery instead of the div id due to the table row restrictions -->
+								</table><br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="js-render-nfl-standing" class="hidden">
+					<br><h1 class="sports-category">NFL Standings</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers team standings from the 2016 regular season sorted by winningest team and categorized by division. It tells us what was the win-loss-tie record for each team, total games played, total points for (meaning offensive scores), and total points against (meaning opponents score offensively against them). At the bottom of the page, you'll find a glossary for reading this table.</p>
+					</div>
+
+					<div id="js-nfl-standing" class="hidden"></div>
+
+					<!-- Below is not part of the jQuery render function so this glossary must stay here -->
+					<div class="boxscore-container"> 
+						<div class="scoreboard-container">
+						<p class="game-location"><i>Glossary</i><br>W: Wins<br>L: Losses<br>T: Ties<br>GP: Games Played<br>PF - Total Points For<br>PA: Total Points Against</p>
+						</div>
+					</div>
+					<br><br>
+				</div>
+			<!-- This NFL section above ends here and is tied to jQuery. When selecting a sport from the navbar, one of the categories from this section will be rendered -->
+
+
+			<!-- This MLB section below begins here and is tied to jQuery. When selecting a sport from the navbar, one of the categories from this section will be rendered -->
+				<div id="js-render-mlb-scorecard" class="hidden">
+					<br><h1 class="sports-category">MLB Scorecards</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers scorecards of past games from the 2016 regular season. Below are the results from each game played on a specific day, where the game occurred, and how many runs each team scored in each inning.</p>
+					</div>
+
+					<div id="js-mlb-scorecard" class="hidden"></div>
+					<footer></footer>
+				</div>
+
+				<div id="js-render-mlb-schedule" class="hidden">
+					<br><h1 class="sports-category">MLB Schedule</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers the complete schedule of past games from the 2016 regular season sorted by date. It tells us what matchups occurred, the time game was scheduled to play, and in what sports stadium the game occurred.</p>
+					</div>
+
+					<div id="js-mlb-schedule">
+						<div class="boxscore-container">
+							<div class="scoreboard-container">
+								<table id="js-mlb-schedule-table">
+								<!-- This table id is linked to jQuery instead of the div id due to the table row restrictions -->
+								</table><br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="js-render-mlb-standing" class="hidden">
+					<br><h1 class="sports-category">MLB Standings</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers team standings from the 2016 regular season sorted by winningest team and categorized by divisional leagues. It tells us what was the win-loss record for each team, total games played, total runs scored, and total runs opponents score against them. At the bottom of the page, you'll find a glossary for reading this table.</p>
+					</div>
+
+					<div id="js-mlb-standing" class="hidden"></div>
+
+					<!-- Below is not part of the jQuery render function so this glossary must stay here -->
+					<div class="boxscore-container">
+						<div class="scoreboard-container">
+						<p class="game-location"><i>Glossary</i><br>W: Wins<br>L: Losses<br>GP: Games Played<br>RF: Total Runs For<br>RA: Total Runs Against</p>
+						</div>
+					</div>
+					<br><br>
+				</div>
+			<!-- This MLB section above ends here and is tied to jQuery. When selecting a sport from the navbar, one of the categories from this section will be rendered -->
+
+			<!-- This NBA section below begins here and is tied to jQuery. When selecting a sport from the navbar, one of the categories from this section will be rendered -->
+				<div id="js-render-nba-scorecard" class="hidden">
+					<br><h1 class="sports-category">NBA Scorecards</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers scorecards of past games from the 2016-2017 regular season. Below are the results from each game played on a specific day, where the game occurred, and how many points each team scored in each quarter.</p>
+					</div>
+
+					<div id="js-nba-scorecard" class="hidden"></div>
+					<footer></footer>
+				</div>
+
+				<div id="js-render-nba-schedule" class="hidden">
+					<br><h1 class="sports-category">NBA Schedule</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers the complete schedule of past games from the 2016-2017 regular season sorted by date. It tells us what matchups occurred, the time game was scheduled to play, and in what sports stadium the game occurred.</p>
+					</div>
+
+					<div id="js-nba-schedule">
+						<div class="boxscore-container">
+							<div class="scoreboard-container">
+								<table id="js-nba-schedule-table">
+									<!-- This table id is linked to jQuery instead of the div id due to the table row restrictions -->
+								</table><br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="js-render-nba-standing" class="hidden">
+					<br><h1 class="sports-category">NBA Standings</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers team standings from the 2016-2017 regular season sorted by winningest team and categorized by eastern and western conferences. It tells us what was the win-loss record for each team, winning percentage, and points scored per game. At the bottom of the page, you'll find a glossary for reading this table.</p>
+					</div>
+
+					<div id="js-nba-standing" class="hidden"></div>
+
+					<!-- Below is not part of the jQuery render function so this glossary must stay here -->
+					<div class="boxscore-container">
+						<div class="scoreboard-container">
+						<p class="game-location"><i>Glossary</i><br>W: Wins<br>L: Losses<br>PCT: Win Percentage<br>PPG: Average Points Per Game</p>
+						</div>
+					</div>
+					<br><br>
+				</div>
+			<!-- This NBA section above ends here and is tied to jQuery. When selecting a sport from the navbar, one of the categories from this section will be rendered -->
+
+			<!-- This NHL section below begins here and is tied to jQuery. When selecting a sport from the navbar, one of the categories from this section will be rendered -->
+				<div id="js-render-nhl-scorecard" class="hidden">
+					<br><h1 class="sports-category">NHL Scorecards</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers scorecards of past games from the 2016-2017 regular season. Below are the results from each game played on a specific day, where the game occurred, and how many goals each scored in each period.</p>
+					</div>
+
+					<div id="js-nhl-scorecard" class="hidden"></div>
+					<footer></footer>
+				</div>
+
+				<div id="js-render-nhl-schedule" class="hidden">
+					<br><h1 class="sports-category">NHL Schedule</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers the complete schedule of past games from the 2016-2017 regular season sorted by date. It tells us what matchups occurred, the time game was scheduled to play, and in what sports stadium the game occurred.</p>
+					</div>
+
+					<div id="js-nhl-schedule">
+						<div class="boxscore-container">
+							<div class="scoreboard-container">
+								<table id="js-nhl-schedule-table">
+								<!-- This table id is linked to jQuery instead of the div id due to the table row restrictions -->
+								</table><br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="js-render-nhl-standing" class="hidden">
+					<br><h1 class="sports-category">NHL Standings</h1><br>
+
+					<div class="banner-content">
+						<p class="article-content">This section covers team standings from the 2016-2017 regular season sorted by winningest team and categorized by eastern and western conferences. It tells us what was the win-loss record for each team, total games played, total offensive goals score, total goals opponents scored against them, and a cumpulative point system to determine playoff qualifications. At the bottom of the page, you'll find a glossary for reading this table.</p>
+					</div>
+
+					<div id="js-nhl-standing" class="hidden"></div>
+					
+					<!-- Below is not part of the jQuery render function so this glossary must stay here -->
+					<div class="boxscore-container">
+						<div class="scoreboard-container">
+						<p class="game-location"><i>Glossary</i><br>W: Wins<br>L: Losses<br>GP: Games Played<br>PF - Total Points For<br>PA: Total Points Against<br>PTS: Total Points</p>
+						</div>
+					</div>
+					<br><br>
+				</div>
+			<!-- This NHL section above ends here and is tied to jQuery. When selecting a sport from the navbar, one of the categories from this section will be rendered -->
+
+			<footer></footer>
+		</section>
+	<!-- This main section that covers app content ends here-->
+</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app.js"></script>
+</html>
